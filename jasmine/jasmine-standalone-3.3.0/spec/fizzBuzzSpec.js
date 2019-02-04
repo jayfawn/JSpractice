@@ -8,4 +8,7 @@ describe("fizzBuzz", function() {
   it("Will say fizzbuzz if the number can be divided from 5 and 3", function() {
     expect(fizzbuzz(15)).toEqual("fizzbuzz");
   });
+  it("Will return the number if is not divisible by 3 or 5", function() {
+    expect(fizzbuzz(1)).toEqual(1);
+  });
 });
